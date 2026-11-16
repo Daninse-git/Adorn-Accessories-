@@ -1,0 +1,909 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    width: 100%;
+    height: 15vh;
+
+}
+
+.navigation {
+    width: 100%;
+    height: 31vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 2px solid red ; */
+    background-color: #ffd497;
+}
+
+.sect-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./file_00000000038081f48b43a30e62c5123c.png);
+    background-position: relative;
+    background-repeat: 1;
+    background-size: cover;
+    background-color: rgba(148, 98, 38, 0.747);
+
+}
+
+.adorn {
+    width: 20%;
+    height: 15vh;
+    margin-left: 150px;
+    padding-bottom: 20px;
+    /* margin-bottom: 50px; */
+    position: relative;
+    right: 100px;
+    margin-top: 0;
+
+
+}
+
+
+
+.nava {
+    width: 40%;
+    height: 20vh;
+    /* border: 3px solid purple;  */
+    margin-left: 80px;
+
+}
+
+.nava {
+    display: flex;
+    align-items: center;
+}
+
+.unorder {
+    display: flex;
+    margin: auto;
+    text-align: start;
+    /* background-color: rgb(98, 71, 36); */
+    font-size: 1.2rem;
+}
+
+.list {
+    list-style: none;
+
+
+}
+
+.anch {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.anch:hover {
+    color: rgb(255, 255, 243);
+}
+
+.access {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+
+.tea {
+    font-size: 40px;
+}
+
+.ELE {
+    width: 45%;
+    height: 20vh;
+    margin-left: 70px;
+    padding-bottom: 11%;
+    /* margin-bottom: 50px; */
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-right: 0;
+    padding-top: 20px;
+    margin: 40px;
+    margin-top: 100px;
+}
+
+.elegant {
+    margin-top: 20px;
+    text-align: 20px;
+}
+
+.paragraph3 {
+    margin-top: 20px;
+    text-align: 20px;
+}
+
+.style {
+    margin-top: 20px;
+    text-align: 20px;
+}
+
+.DIV {
+    height: 20vh;
+    width: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.BR {
+    padding-left: 20px;
+    padding-left: 0;
+    padding-top: 20px;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+
+
+h2 {
+    width: 30%;
+    height: 20vh;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 100px;
+    display: flex;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+
+.container {
+    height: 120vh;
+    width: 100%;
+    background-color: rgb(235, 170, 86);
+    color: black;
+    /* display: flex;
+    padding-bottom: 50px; */
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    /* border: 2px solid red ; */
+    width: 100%;
+    font-size: 40px;
+    padding-top: 70px;
+}
+
+.Text {
+    /* width: 20%; */
+    /* border: 2px solid red ; */
+    font-size: 20px;
+
+}
+
+.paragraph3 {
+    font-size: 1.3rem;
+}
+
+.Product {
+    height: 80px;
+    width: 60%;
+    padding-top: 30px;
+    font-size: 35px;
+    padding-right: 40px;
+    /* border: 2px solid red ; */
+
+}
+
+.div {
+    height: 60vh;
+    width: 50%;
+    padding-left: 30px;
+    font-size: 1rem;
+    /* background-image: url(./img.png); */
+    /* border: 2px solid red; */
+    text-align: 20px;
+}
+
+.div li {
+    font-size: 1.5rem;
+}
+
+
+.styles-wrapper {
+    text-align: left;
+    width: 40%;
+    height: 100vh;
+    font-size: 1rem;
+    /* border: 2px solid red ; */
+    padding-top: 30px;
+}
+
+.styles-wrapper p {
+
+    font-size: 2.3rem;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-right: 40px;
+    /* border: 2px solid red; */
+}
+
+.wrapper {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    justify-content: space-between;
+    text-align: left;
+}
+
+/* .styles-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }*/
+
+
+.styles-wrapper ul {
+    padding-left: 40px;
+    font-size: 1.5rem;
+}
+
+.section-wrapper {
+    height: 80vh;
+    width: 100%;
+    background-color: #ffd497;
+    background-position: relative;
+    display: flex;
+    background-size: cover;
+    background-image: url(./clover\ \ \ \ \ sert.png);
+    /* background: linear-gradient(to right, #582f19, #8b5e3c, #9c4f29); */
+    padding-right: 50px;
+}
+
+.about-text {
+    width: 50%;
+    padding: 40px;
+    color: white;
+}
+
+.about-text p {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.span-text {
+    display: block;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.numbers {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    /* border: 1px solid red ; */
+    padding-right: 40px;
+    padding-bottom: 90px;
+    filter: brightness(0) invert(1);
+}
+
+.stat p {
+    font-size: 1rem;
+
+}
+
+.number p {
+    font-size: 1rem;
+    /* border: 1px solid red ; */
+}
+
+.stat span {
+    font-size: 1rem;
+    /* border: 1px solid red ; */
+}
+
+.stat p {
+    font-size: 1rem;
+    /* border: 1px solid red ; */
+}
+
+
+
+
+.text-section {
+    padding-top: 50px;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 225, 185);
+}
+
+
+
+.text-div {
+    width: 50%;
+    justify-content: center;
+    height: 50vh;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.text-divs {
+    width: 40%;
+    justify-content: center;
+    height: 50vh;
+
+}
+
+.sec-holder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+h1 {
+    padding-left: 20px;
+    /* justify-content: center;
+    display: flex; */
+    font-size: 3rem;
+    font-weight: 400;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+.Essence-paragraph {
+    font-size: 1.2rem;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.image-only {
+    height: 35vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    background-color: #fac479;
+}
+
+
+.div-1 {
+
+    width: 20%;
+
+    padding-top: 50px;
+
+    padding-right: 40px;
+
+}
+
+.div-1 h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.div-1 img {
+    padding-left: 80px;
+    padding-bottom: 10px;
+}
+
+.div-1 p {
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .navigation {
+        height: 20vh;
+    }
+
+    .adorn {
+        width: 30%;
+        margin-left: 50px;
+        right: 0;
+    }
+
+    .access {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    .nava {
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    .anch {
+        padding: 10px;
+    }
+
+  
+    .sect-1 {
+        height: auto;
+        min-height: 90vh;
+    }
+
+    .ELE {
+        width: 80%;
+        height: auto;
+        margin: 0;
+        padding: 100px 30px;
+        font-size: 45px;
+    }
+
+    .BR {
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .DIV {
+        width: 80%;
+        height: auto;
+    }
+
+    
+    .container {
+        height: auto;
+        min-height: 100vh;
+        padding: 50px;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .div {
+        width: 50%;
+        height: auto;
+    }
+
+    .styles-wrapper {
+        width: 50%;
+        height: auto;
+    }
+
+    /* TIMELESS ACCESSORIES */
+    .section-wrapper {
+        height: auto;
+        min-height: 70vh;
+    }
+
+    .about-text {
+        width: 65%;
+        padding: 50px;
+    }
+
+    .numbers {
+        gap: 30px;
+    }
+
+    /* OUR ESSENCE */
+    .text-section {
+        height: auto;
+        min-height: 60vh;
+        padding: 40px;
+    }
+
+    .text-divs {
+        width: 45%;
+        height: 50vh;
+    }
+
+    .text-div {
+        width: 55%;
+    }
+
+    .Essence-paragraph {
+        padding-left: 10px;
+    }
+
+    /* FEATURES */
+    .image-only {
+        height: auto;
+        min-height: 35vh;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    .div-1 {
+        width: 45%;
+        padding: 25px;
+    }
+
+    .div-1 img {
+        padding-left: 0;
+        display: block;
+        margin: auto;
+    }
+
+    .div-1 h3,
+    .div-1 p {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  
+    .head {
+        height: auto;
+    }
+
+    .navigation {
+        height: auto;
+        min-height: 110px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .adorn {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        right: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .access {
+        padding: 0;
+        margin: 0;
+    }
+
+    .tea {
+        font-size: 35px;
+    }
+
+    .nava {
+        width: 100%;
+        height: auto;
+        margin: 10px 0 0;
+    }
+
+    .unorder {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 5px;
+    }
+
+    .anch {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+
+   
+
+    .sect-1 {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        background-position: center;
+    }
+
+    .ELE {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 70px 25px;
+        font-size: 38px;
+    }
+
+    .BR {
+        width: 100%;
+        padding: 20px 0 0;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .elegant,
+    .style {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+
+    
+
+    .container {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 50px 25px;
+    }
+
+    .intro {
+        width: 100%;
+        padding-top: 0;
+        font-size: 32px;
+    }
+
+    .Text {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .paragraph3 {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .div {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .Product {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+
+    .div li {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .styles-wrapper {
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .styles-wrapper p {
+        font-size: 30px;
+        padding-right: 0;
+    }
+
+    .styles-wrapper ul {
+        padding-left: 25px;
+        font-size: 18px;
+    }
+
+
+    
+
+    .section-wrapper {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 0;
+        background-position: center;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 60px 25px;
+    }
+
+    .about-text > p {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .span-text {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+
+    .numbers {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px 0 40px;
+        margin-top: 20px;
+    }
+
+    .numbers hr {
+        width: 100%;
+    }
+
+    .stat,
+    .number {
+        width: 100%;
+        text-align: center;
+    }
+
+    .stat img,
+    .number img {
+        width: 30px;
+    }
+
+    .stat h3,
+    .number h3 {
+        font-size: 24px;
+    }
+
+    .stat p,
+    .number p {
+        font-size: 14px;
+    }
+
+
+   
+
+    .text-section {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 40px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .text-divs {
+        width: 100%;
+        height: 300px;
+    }
+
+    .sec-holder {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text-div {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    h1 {
+        padding-left: 0;
+        font-size: 32px;
+    }
+
+    .Essence-paragraph {
+        font-size: 16px;
+        line-height: 1.7;
+        padding: 15px 0 0;
+    }
+
+
+    
+
+    .image-only {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .div-1 {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .div-1 img {
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        margin: 0 auto 15px;
+        display: block;
+    }
+
+    .div-1 h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .div-1 p {
+        font-size: 14px;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    .tea {
+        font-size: 30px;
+    }
+
+    .access {
+        font-size: 13px;
+    }
+
+    .unorder {
+        gap: 0;
+    }
+
+    .anch {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .ELE {
+        padding: 60px 20px;
+        font-size: 32px;
+    }
+
+    .BR {
+        font-size: 15px;
+    }
+
+    .intro {
+        font-size: 28px;
+    }
+
+    .Text,
+    .paragraph3 {
+        font-size: 15px;
+    }
+
+    .Product,
+    .styles-wrapper p {
+        font-size: 27px;
+    }
+
+    .div li,
+    .styles-wrapper ul {
+        font-size: 16px;
+    }
+
+    .about-text > p {
+        font-size: 27px;
+    }
+
+    .span-text {
+        font-size: 14px;
+    }
+
+    .text-divs {
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .Essence-paragraph {
+        font-size: 15px;
+    }
+
+    .image-only {
+        grid-template-columns: 1fr;
+    }
+
+    .div-1 {
+        padding: 15px;
+    }
+}

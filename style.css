@@ -1,0 +1,561 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVIGATION */
+.head {
+    width: 100%;
+    height: 15vh;
+}
+
+.navigation {
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    align-items: center;
+    justify-content: space-between;
+    background-color: burlywood;
+    padding: 10px 5%;
+}
+
+.adorn {
+    flex-shrink: 0;
+}
+
+.access {
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 1.1;
+}
+
+.tea {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.nava {
+    display: flex;
+    align-items: center;
+}
+
+.unorder {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.unorder li {
+    list-style: none;
+}
+
+.anch {
+    display: block;
+    padding: 12px;
+    color: black;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    border: 2px soolid red ;
+}
+
+.anch:hover {
+    color: rgb(159, 159, 10);
+}
+
+/* HAMBURGER MENU */
+.menu {
+    display: none;
+    width: 42px;
+    height: 38px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.menu span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu.active span:first-child {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.active span:last-child {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* HERO SECTION */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./file_00000000038081f48b43a30e62c5123c.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 100px 7% 50px;
+}
+
+.hero-content {
+    width: 50%;
+    max-width: 650px;
+    color: black;
+    font-family: "Times New Roman", serif;
+}
+
+.Ele {
+    font-size: clamp(42px, 5vw, 70px);
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.BR {
+    display: inline-block;
+}
+
+.DIV {
+    width: 100%;
+    max-width: 450px;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 145px;
+    min-height: 48px;
+    padding: 12px 22px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* SHOP BY CATEGORY */
+.shop {
+    width: 100%;
+    padding: 60px 5% 80px;
+}
+
+.shop h2 {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(24px, 3vw, 36px);
+    font-family: Georgia, serif;
+    font-weight: normal;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.card-section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.card-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    min-width: 0;
+    background-color: #f2efeb;
+    color: black;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image-holder {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ring {
+    width: 100%;
+    padding: 18px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    padding-top: 30px;
+    background-color: #5c2c13;
+    color: white;
+}
+
+.footer-wrapp {
+    width: 100%;
+    min-height: 300px;
+    padding: 40px 6%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
+    background-color: #3b2418;
+}
+
+.foot-links {
+    width: 100%;
+    min-width: 0;
+}
+
+.foot-links h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer .access {
+    text-align: left;
+    width: fit-content;
+}
+
+.footer .tea {
+    font-size: 36px;
+}
+
+.foot-paragraph {
+    margin-top: 20px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav li {
+    margin-bottom: 12px;
+}
+
+.nav a,
+.foot-paragraph a,
+.image-holder a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.foot-paragraph a:hover,
+.image-holder a:hover {
+    color: burlywood;
+}
+
+.image-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.last-footer {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navigation {
+        min-height: 12vh;
+        padding: 10px 5%;
+    }
+
+    .head {
+        height: 12vh;
+    }
+
+    .tea {
+        font-size: 32px;
+    }
+
+    .access {
+        font-size: 12px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .nava {
+        position: relative;
+    }
+
+    .unorder {
+        display: none;
+        position: absolute;
+        top: calc(100% + 15px);
+        right: 0;
+        width: 220px;
+        padding: 12px;
+        background-color: burlywood;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .unorder.show {
+        display: flex;
+    }
+
+    .anch {
+        padding: 14px;
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 85vh;
+        padding: 100px 6% 50px;
+        background-position: center;
+    }
+
+    .hero-content {
+        width: 65%;
+    }
+
+    .DIV {
+        font-size: 17px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .card-image-holder {
+        height: 280px;
+    }
+
+    .footer-wrapp {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 25px;
+    }
+}
+
+/* MOBILE: 425px AND BELOW */
+@media screen and (max-width: 425px) {
+
+    .head {
+        height: 90px;
+    }
+
+    .navigation {
+        min-height: 90px;
+        padding: 10px 5%;
+    }
+
+    .tea {
+        font-size: 29px;
+    }
+
+    .access {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .menu {
+        width: 38px;
+    }
+
+    .hero {
+        min-height: 650px;
+        padding: 120px 7% 50px;
+        background-position: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .Ele {
+        font-size: 46px;
+    }
+
+    .DIV {
+        max-width: 310px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .btn {
+        min-width: 135px;
+        min-height: 45px;
+    }
+
+    .shop {
+        padding: 45px 5% 55px;
+    }
+
+    .shop h2 {
+        font-size: 23px;
+        margin-bottom: 25px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .card-image-holder {
+        height: 190px;
+    }
+
+    .ring {
+        padding: 13px 5px;
+        font-size: 17px;
+    }
+
+    .footer {
+        padding-top: 15px;
+    }
+
+    .footer-wrapp {
+        grid-template-columns: 1fr;
+        padding: 35px 7%;
+        gap: 35px;
+    }
+
+    .foot-links h3 {
+        margin-bottom: 15px;
+    }
+
+    .foot-paragraph {
+        margin-top: 15px;
+    }
+
+    .last-footer {
+        font-size: 12px;
+    }
+}
+
+/* SMALL MOBILE: 375px AND BELOW */
+@media screen and (max-width: 375px) {
+
+    .navigation {
+        padding: 10px 4%;
+    }
+
+    .tea {
+        font-size: 26px;
+    }
+
+    .hero {
+        min-height: 600px;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .Ele {
+        font-size: 40px;
+    }
+
+    .DIV {
+        font-size: 15px;
+    }
+
+    .shop h2 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .card-container {
+        gap: 10px;
+    }
+
+    .card-image-holder {
+        height: 160px;
+    }
+
+    .ring {
+        font-size: 15px;
+    }
+
+    .image-holder {
+        gap: 12px;
+    }
+}

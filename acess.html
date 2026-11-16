@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="acess.css">
+</head>
+
+
+<body>
+
+    <div class="Register">
+
+        <div class="register-container">
+
+            <h1 class="form-header">Customer Registration</h1>
+
+            <form id="registerForm">
+
+                <label>Full Name:</label><br>
+                <input type="text" id="fullname" placeholder="Enter your fullname" required><br><br>
+
+                <label>Email Address:</label><br>
+                <input type="text" id="email" placeholder="Enter a valid email" required><br><br>
+
+                <label>Password:</label><br>
+
+                <input type="password" id="password" placeholder="enter 8 digit password" required><br><br>
+                <label>Confirm Password:</label><br>
+                <input type="password" id="confirmPassword" required><br><br>
+                <p id="feedback"></p>
+                <button type="submit">Register</button>
+
+            </form>
+
+        </div>
+        <!-- <p id="feedback"></p> -->
+    </div>
+    <script>
+
+        let form = document.getElementById("registerForm");
+        let fullname = document.getElementById("fullname");
+        let email = document.getElementById("email");
+        let password = document.getElementById("password");
+        let confirmPassword =
+            document.getElementById("confirmPassword");
+        let feedback = document.getElementById("feedback");
+
+        form.addEventListener("submit", function (event) {
+
+
+            event.preventDefault();
+
+            if (
+                fullname.value.trim() == "" ||
+                email.value.trim() == "" ||
+                password.value == "" ||
+                confirmPassword.value == ""
+            ) {
+                feedback.innerHTML = "Please complete all fields.";
+                feedback.style.color = "red";
+            }
+
+            else if (!email.value.includes("@")) {
+                feedback.innerHTML =
+                    "Please enter a valid email address.";
+                feedback.style.color = "red";
+            }
+
+            else if (password.value.length < 6) {
+                feedback.innerHTML =
+                    "Your password must contain at least 8 characters.";
+                feedback.style.color = "red";
+            }
+
+            else if (password.value != confirmPassword.value) {
+                feedback.innerHTML =
+                    "Your passwords do not match.";
+                feedback.style.color = "red";
+            }
+
+            else {
+                feedback.innerHTML =
+                    "Registration completed successfully!";
+                feedback.style.color = "green";
+                setTimeout(function () {
+                    window.location.href = "adon.html";
+                }, 2000);
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

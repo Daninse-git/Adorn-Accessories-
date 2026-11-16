@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="adon.css">
+</head>
+
+<body>
+
+    <header class="head">
+        <div class="card">
+
+        </div>
+        <div class="box">
+
+            <div class="box-1">
+
+                <div class="inner-container">
+                    <div class="notification">
+                        Account created. Redirectin you to login.....
+                    </div>
+                    <div class="Password">
+                        <p class="text">Customer login</p>
+                        <span class="span">Hey enter your details to sign in to your account</span>
+
+
+                    </div>
+                    <div class="register">
+                        <form id="registerForm">
+
+
+                            <label>Email :</label><br>
+                            <input type="text" id="email" placeholder="Enter a valid email"><br><br>
+                            <small class="error" id="emailError"></small>
+
+                            <label>Password:</label><br>
+                            <input type="password" id="password" placeholder="At least 8 character"><br><br>
+                            <small class="error" id="passwordError"></small>
+                            <label>Confirm Password:</label><br>
+                            <input type="password" id="confirmPassword"><br><br>
+                            <p class="from"><a href="./acess.html">Forgot password</a></p>
+                            <p id="successfullMessage" role="status"></p>
+                            <p id="feedback"></p><br>
+
+                            <button type="submit">Login</button>
+
+                            <p class="paragraph">don't have account ? <span class="sp"><a href="./acess.html"
+                                        class="border">create account</a></span></p>
+                        </form>
+
+                    </div>
+                </div>
+
+                <script>
+                
+                    let form = document.getElementById("registerForm");
+                    let email = document.getElementById("email");
+                    let password = document.getElementById("password");
+                    let confirmPassword =
+                        document.getElementById("confirmPassword");
+                    let feedback = document.getElementById("feedback");
+
+                    form.addEventListener("submit", function (event) {
+
+
+                        event.preventDefault();
+
+                        if (
+
+                            email.value.trim() == "" ||
+                            password.value == "" ||
+                            confirmPassword.value == ""
+                        ) {
+                            feedback.innerHTML = "Please complete all fields.";
+                            feedback.style.color = "red";
+                        }
+
+                        else if (!email.value.includes("@")) {
+                            feedback.innerHTML =
+                                "Please enter a valid email address.";
+                            feedback.style.color = "red";
+                        }
+
+                        else if (password.value.length < 6) {
+                            feedback.innerHTML =
+                                "Your password must contain at least 6 characters.";
+                            feedback.style.color = "red";
+                        }
+
+                        else if (password.value != confirmPassword.value) {
+                            feedback.innerHTML =
+                                "Your passwords do not match.";
+                            feedback.style.color = "red";
+                        }
+
+                        else {
+                            feedback.innerHTML =
+                                "Registration completed successfully!";
+                            feedback.style.color = "green";
+
+                            setTimeout(function () {
+                                window.location.href = "index.html";
+                            }, 2000);
+                        }
+
+
+                    });
+                </script>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>

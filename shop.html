@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    <header class="navigation">
+        <a href="index.html" class="logo">
+            <span>ADORN</span>
+            <small>ACCESSORIES</small>
+        </a>
+
+        <nav class="list">
+
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="About.html">About us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="cart-toggle" id="open-cart" type="button">
+            🛍 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <!-- SHOP HERO -->
+    <section class="shop-hero">
+        <div class="hero-content">
+            <p class="eyebrow">THE ADORN COLLECTION</p>
+
+            <h1>
+                Elegant Accessories<br>
+                <em>For Every You</em>
+            </h1>
+
+            <p>
+                Discover timeless pieces that complemente
+                your unique style.
+            </p>
+
+            <a href="#collection" class="shop-link">
+                SHOP COLLECTION
+            </a>
+        </div>
+    </section>
+
+    <!-- SEARCH AND FILTERS -->
+    <section class="shop-controls">
+        <input type="search" id="search" placeholder="Search for accessories..." aria-label="Search products">
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="All" type="button">All</button>
+            <button class="filter-btn" data-category="Necklaces" type="button">Necklaces</button>
+            <button class="filter-btn" data-category="Bracelets" type="button">Bracelets</button>
+            <button class="filter-btn" data-category="Rings" type="button">Rings</button>
+            <button class="filter-btn" data-category="Earrings" type="button">Earrings</button>
+            <button class="filter-btn" data-category="Watches" type="button">Watches</button>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <main class="products" id="collection">
+        <h2>Shop Our Collection</h2>
+        <p class="section-description">
+            Little details. Beautiful statements.
+        </p>
+
+        <div class="product-grid" id="product-grid"></div>
+    </main>
+
+    <!-- CART OVERLAY -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- CART PANEL -->
+    <aside class="cart-panel" id="cart-panel" aria-label="Shopping cart" aria-hidden="true">
+        <div class="cart-heading">
+            <h2>Your Cart</h2>
+            <button id="close-cart" class="close-cart" type="button" aria-label="Close cart">&times;</button>
+        </div>
+
+        <div id="cart-items">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-summary">
+            <p class="total">
+                Total: <span id="cart-total">₦0</span>
+            </p>
+
+            <button id="checkout-btn" class="checkout-btn" type="button">
+                Checkout on WhatsApp
+            </button>
+
+            <button id="clear-cart" class="clear-btn" type="button">
+                Clear Cart
+            </button>
+        </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>ADORN</h2>
+                <p>ACCESSORIES</p>
+                <p>Elevate your everyday style.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="About.html">About us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Customer Care</h3>
+                <a href="contact.html">Contact us</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Stay Connected</h3>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.tiktok.com/">TikTok</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 ADORN Accessories. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>
+
+</html>

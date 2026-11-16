@@ -1,0 +1,39 @@
+Collecting jupyter
+  Downloading jupyter-1.1.1-py2.py3-none-any.whl.metadata (2.0 kB)
+Collecting ipykernel
+  Downloading ipykernel-7.3.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting numpy
+  Downloading numpy-2.5.1-cp312-cp312-win_amd64.whl.metadata (6.6 kB)
+Collecting pandas
+  Downloading pandas-3.0.3-cp312-cp312-win_amd64.whl.metadata (19 kB)
+Collecting matplotlib
+  Downloading matplotlib-3.11.0-cp312-cp312-win_amd64.whl.metadata (80 kB)
+Collecting seaborn
+  Downloading seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting notebook (from jupyter)
+  Downloading notebook-7.6.0-py3-none-any.whl.metadata (10 kB)
+Collecting jupyter-console (from jupyter)
+  Downloading jupyter_console-6.6.3-py3-none-any.whl.metadata (5.8 kB)
+Collecting nbconvert (from jupyter)
+  Downloading nbconvert-7.17.1-py3-none-any.whl.metadata (8.4 kB)
+INFO: pip is looking at multiple versions of jupyter to determine which version is compatible with other requirements. This could take a while.
+Collecting jupyter
+  Downloading jupyter-1.1.0-py2.py3-none-any.whl.metadata (1000 bytes)
+  Downloading jupyter-1.0.0-py2.py3-none-any.whl.metadata (995 bytes)
+Collecting qtconsole (from jupyter)
+  Downloading qtconsole-5.7.2-py3-none-any.whl.metadata (4.4 kB)
+ERROR: Cannot install jupyter==1.0.0, jupyter==1.1.0 and jupyter==1.1.1 because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    jupyter 1.1.1 depends on ipywidgets
+    jupyter 1.1.0 depends on ipywidgets
+    jupyter 1.0.0 depends on ipywidgets
+
+Additionally, some packages in these conflicts have no matching distributions available for your environment:
+    ipywidgets
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip to attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts

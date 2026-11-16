@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: wheat;
+}
+
+.head {
+    height: 85vh;
+    width: 90%;
+    margin: 0 auto;
+    background-color: wheat;
+    border-radius: 20px;
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+    height: 85vh;
+    width: 90%;
+    background-image: url(./1.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.box {
+    height: 85vh;
+    background-color: wheat;
+    width: 90%;
+    border-radius: 15px;
+
+}
+
+input {
+    border-radius: 9px;
+    width: 100%;
+    padding: 9px;
+}
+
+.box-1 {
+    height: 67vh;
+    width: 70%;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    background-color: wheat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.notification {
+    display: none;
+    background: #d4edda;
+    color: #155724;
+    padding: 9px;
+    border-radius: 8px;
+    border: 1px solid red;
+}
+.notification{
+    display: block;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+.from{
+    width: 100%;
+    /* border: 2px solid red ; */
+    justify-content: center;display: flex;
+    padding-left: 11rem;
+    
+  /* padding-left: 20rem; */
+}
+.span {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.inner-box {
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    background-color: black;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.register {
+    height: 27vh;
+    padding-left: 38px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.Password {
+    height: 9vh;
+    margin-bottom: 20px;
+    /* border: 2px solid blue; */
+}
+
+button{
+    height: 5vh;
+    width: 100%;
+    border: 2px solid black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    background-color: navy;
+    border-radius: 12px;
+}
+
+.paragraph {
+    font-size: 1.2rem;
+    margin: 30px;
+    margin-top: 50px;
+    /* border: 2px solid red ; */
+}
+
+.border {
+    /* border: 2px solid red ; */
+    text-decoration: none;
+}
+
+img {
+    border-top: 50px;
+    /* background-image: none; */
+    border: 2px solid red;
+}
+/* TABLETS */
+@media screen and (max-width: 1024px) {
+
+    .head {
+        width: 95%;
+        height: auto;
+        min-height: 85vh;
+        margin-top: 30px;
+    }
+
+    .card {
+        width: 50%;
+        height: auto;
+        min-height: 85vh;
+    }
+
+    .box {
+        width: 50%;
+        height: auto;
+        min-height: 85vh;
+        padding: 20px;
+    }
+
+    .box-1 {
+        width: 100%;
+        height: auto;
+        min-height: 70vh;
+        margin: 0;
+        padding: 25px 10px;
+    }
+
+    .register {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .from {
+        padding-left: 0;
+        justify-content: flex-end;
+    }
+
+    .paragraph {
+        font-size: 1rem;
+        margin: 25px 0;
+    }
+
+    .span {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+}
+
+
+/* MOBILE PHONES */
+@media screen and (max-width: 600px) {
+
+    body {
+        background-color: wheat;
+    }
+
+    .head {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .card {
+        width: 100%;
+        height: 220px;
+        min-height: 0;
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 20px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .box-1 {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inner-container {
+        width: 100%;
+    }
+
+    .Password {
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .text {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .span {
+        display: block;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .register {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .from {
+        width: 100%;
+        padding-left: 0;
+        justify-content: flex-end;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        height: 48px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    .paragraph {
+        font-size: 0.95rem;
+        margin: 25px 0 10px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .error {
+        font-size: 0.85rem;
+    }
+
+    #feedback,
+    #successfullMessage {
+        font-size: 0.9rem;
+        overflow-wrap: anywhere;
+    }
+}
+
+
+/* VERY SMALL PHONES */
+@media screen and (max-width: 360px) {
+
+    .head {
+        padding: 8px;
+    }
+
+    .card {
+        height: 170px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .span {
+        font-size: 0.85rem;
+    }
+
+    .paragraph {
+        font-size: 0.85rem;
+    }
+}
