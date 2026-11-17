@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adorn Accessories</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <header class="head">
+        <nav class="navigation">
+
+            <div class="adorn">
+                <p class="access">
+                    <span class="tea">adorn</span><br>
+                    accessories
+                </p>
+            </div>
+            <div class="nava">
+                <button class="menu" id="menu" aria-label="Open navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="unorder" id="unorder">
+                    <li><a class="anch" href="#">Home</a></li>
+                    <li><a class="anch" href="./shop.html">Shop</a></li>
+                    <li><a class="anch" href="./About.html">About us</a></li>
+                    <li><a class="anch" href="./Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="Ele">
+                Wear Your<br>
+                <span class="BR">Sparkle</span>
+            </h1>
+
+            <div class="DIV">
+                Discover elegant accessories that complement
+                your unique style. Find the perfect finishing
+                touch for every occasion.
+            </div>
+
+            <a href="./shop.html" class="btn">SHOP NOW</a>
+        </div>
+    </section>
+
+    <!-- SHOP BY CATEGORY -->
+    <section class="shop">
+        <h2>SHOP BY CATEGORY</h2>
+
+        <div class="card-section">
+            <div class="card-container">
+
+                <a href="./shop.html" class="card">
+                    <div class="card-image-holder">
+                        <img src="./9f2d8865d27b560c31c0df69def8931ae2f6cd323769f10fa23291f0906a5303.png"
+                            alt="Rings collection" class="card-image">
+                    </div>
+                    <p class="ring">Rings</p>
+                </a>
+                <a href="./shop.html" class="card">
+                    <div class="card-image-holder">
+                        <img src="./earrings.png" alt="Earrings collection" class="card-image">
+                    </div>
+                    <p class="ring">Earrings</p>
+                </a>
+
+                <a href="./shop.html" class="card">
+                    <div class="card-image-holder">
+                        <img src="./necklace.png" alt="Necklaces collection" class="card-image">
+                    </div>
+                    <p class="ring">Necklaces</p>
+                </a>
+
+                <a href="./shop.html" class="card">
+                    <div class="card-image-holder">
+                        <img src="./IMG-20260902-WA0265.jpg" alt="Watches collection" class="card-image">
+                    </div>
+                    <p class="ring">Watches</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-wrapp">
+
+            <div class="foot-links">
+                <p class="access">
+                    <span class="tea">adorn</span><br>
+                    accessories
+                </p>
+
+                <p class="foot-paragraph">
+                    Elevate your everyday style with
+                    beautiful accessories for every occasion.
+                </p>
+            </div>
+
+            <div class="foot-links">
+                <h3>Quick Links</h3>
+                <ul class="nav">
+                    <li><a href="./adorn.html">Home</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="./About.html">About us</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-links">
+                <h3>Contact Us</h3>
+
+                <p class="foot-paragraph">
+                    <a href="mailto:pregodwin201@gmail.com">
+                        Email us
+                    </a>
+                </p>
+
+                <p class="foot-paragraph">
+                    <a href="https://wa.me/2349049629912">
+                        WhatsApp us
+                    </a>
+                </p>
+
+                <div class="image-holder">
+                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://www.facebook.com/">Facebook</a>
+                    <a href="https://www.tiktok.com/">TikTok</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="last-footer">
+            <p>&copy; 2026 Adorn Accessories. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menu = document.getElementById("menu");
+        const unorder = document.getElementById("unorder");
+
+        menu.addEventListener("click", function () {
+            const isOpen = unorder.classList.toggle("show");
+            menu.classList.toggle("active", isOpen);
+            menu.setAttribute("aria-expanded", isOpen);
+        });
+
+        document.querySelectorAll(".anch").forEach(function (link) {
+            link.addEventListener("click", function () {
+                unorder.classList.remove("show");
+                menu.classList.remove("active");
+                menu.setAttribute("aria-expanded", "false");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
